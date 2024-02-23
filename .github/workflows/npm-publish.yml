@@ -19,7 +19,7 @@ jobs:
           cd ./types
           git config --global user.email "gilzon.me@gmail.com"
           git config --global user.name "Gilson Gilbert"
-          npm publish --access public
+          npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
@@ -39,6 +39,6 @@ jobs:
           git config --global user.email "gilzon.me@gmail.com"
           git config --global user.name "Gilson Gilbert"
           npm run build
-          npm publish --access public
+          npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
