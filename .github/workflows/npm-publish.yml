@@ -39,6 +39,6 @@ jobs:
           git config --global user.email "gilzon.me@gmail.com"
           git config --global user.name "Gilson Gilbert"
           npm run build
-          npm publish --access public --registry=https://npm.pkg.github.com/
+          npm publish --access public --registry=https://registry.npmjs.org/
         env:
           NODE_AUTH_TOKEN: ${{ secrets.npm_token }}
