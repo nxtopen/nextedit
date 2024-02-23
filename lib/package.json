@@ -1,11 +1,10 @@
 {
   "name": "nextedit",
-  "version": "0.0.0",
-  "description": "HTML Editor for Next.js",
-  "main": "src/NEXTEditor.js",
+  "version": "0.0.0-u1",
+  "description": "WYSIWYG Editor for Next.js",
+  "main": "src/nextedit.js",
   "scripts": {
     "build": "babel src -d dist --presets=@babel/preset-env,@babel/preset-react",
-    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
