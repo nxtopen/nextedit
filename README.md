@@ -1,6 +1,7 @@
 # WYSIWYG Editor For NextJS
 
 ## Usage
+
 ```
 "use client"
 import NextEdit from 'nextedit';
