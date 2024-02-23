@@ -6,22 +6,22 @@ on:
       - main
 
 jobs:
-  publish-types:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 16
-          registry-url: https://registry.npmjs.org/
-      - name: Publish
-        run: |
-          cd ./types
-          git config --global user.email "gilzon.me@gmail.com"
-          git config --global user.name "Gilson Gilbert"
-          npm publish --access public
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
+  # publish-types:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v3
+  #     - uses: actions/setup-node@v3
+  #       with:
+  #         node-version: 16
+  #         registry-url: https://registry.npmjs.org/
+  #     - name: Publish
+  #       run: |
+  #         cd ./types
+  #         git config --global user.email "gilzon.me@gmail.com"
+  #         git config --global user.name "Gilson Gilbert"
+  #         npm publish --access public
+  #       env:
+  #         NODE_AUTH_TOKEN: ${{secrets.npm_token}}
 
   build-publish:
     runs-on: ubuntu-latest
