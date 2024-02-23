@@ -1,8 +1,15 @@
 {
   "name": "nextedit",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "WYSIWYG Editor for Next.js",
   "main": "src/nextedit.js",
+  "repository": {
+    "directory": "https://github.com/nxtopen/nextedit",
+    "url": "https://github.com/nxtopen/nextedit/issues"
+  },
+  "publishConfig": {
+    "provenance": true
+  },
   "scripts": {
     "build": "babel src -d dist --presets=@babel/preset-env,@babel/preset-react"
   },
