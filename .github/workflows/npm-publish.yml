@@ -25,10 +25,14 @@ jobs:
           node-version: 16
           registry-url: https://registry.npmjs.org/
       - run: npm i
-      - name: Bump Version and Publish
+      - name: Publish
         run: |
+          cp ./README.md ./lib/README.md
+          cd lib
           git config --global user.email "gilzon.me@gmail.com"
           git config --global user.name "Gilson Gilbert"
+          npm run build
+          npm patch
           npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
