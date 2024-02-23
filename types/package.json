@@ -1,0 +1,9 @@
+{
+    "name": "@types/nextedit",
+    "version": "1.0.0",
+    "description": "TypeScript declarations for NEXTEdit",
+    "main": "",
+    "types": "./@types/nextedit/index.d.ts",
+    "author": "Your Name",
+    "license": "MIT"
+}
