@@ -21,7 +21,7 @@ jobs:
           git config --global user.name "Gilson Gilbert"
           npm publish --access public
         env:
-          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
   build-publish:
     runs-on: ubuntu-latest
@@ -41,4 +41,4 @@ jobs:
           npm run build
           npm publish --access public
         env:
-          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
