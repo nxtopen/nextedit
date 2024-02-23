@@ -1,11 +1,11 @@
 {
   "name": "nextedit",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "WYSIWYG Editor for Next.js",
   "main": "src/nextedit.js",
   "repository": {
     "directory": "https://github.com/nxtopen/nextedit",
-    "url": "https://github.com/nxtopen/nextedit/issues"
+    "url": "https://github.com/nxtopen/nextedit"
   },
   "publishConfig": {
     "provenance": true
