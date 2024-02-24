@@ -13,7 +13,7 @@
   },
   "scripts": {
     "build": "babel --extensions .js --copy-files ./src -d dist"
-  },  
+  },
   "author": "",
   "license": "ISC",
   "peerDependencies": {
@@ -32,6 +32,7 @@
     "@emotion/react": "^11.11.3",
     "@emotion/styled": "^11.11.0",
     "@mui/icons-material": "^5.15.10",
-    "@mui/material": "^5.15.10"
+    "@mui/material": "^5.15.10",
+    "react-color": "^2.19.3"
   }
 }
