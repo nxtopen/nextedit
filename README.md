@@ -9,11 +9,21 @@ NextEdit is an WYSIWYG Editor built for NextJS. It can be widely used in react/n
 ```
 "use client"
 import NextEdit from 'nextedit';
+import { useState } from 'react';
 
 export default function Home() {
+  const [receivedHtml, setReceivedHtml] = useState<string>('');
+
+  const handleChange = (html: string) => {
+    setReceivedHtml(html);
+  };
   return (
     <div>
-      <NextEdit />
+      <NextEdit onChange={handleChange} />
+      <div>
+        <h4>Received HTML:</h4>
+        <div >{receivedHtml}</div>
+      </div>
     </div>
   );
 }

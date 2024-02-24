@@ -1,13 +1,11 @@
-// nextedit.d.ts
-
 declare module 'nextedit' {
-    // Define the props interface for the NextEdit component
-    interface NextEditProps {
-      // Define props here if applicable
+    import React from 'react';
+
+    export interface NextEditProps {
+        onChange: (html: string) => void;
     }
-  
-    // Define the NextEdit component
-    export const NextEdit:any;
-  
-    // Add other types and interfaces if needed
-  }  
+
+    const NextEdit: React.FC<NextEditProps>;
+
+    export default NextEdit;
+}
