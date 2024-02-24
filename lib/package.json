@@ -1,6 +1,6 @@
 {
   "name": "nextedit",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "WYSIWYG Editor for Next.js",
   "main": "dist/nextedit.js",
   "types": "dist/nextedit.d.ts",

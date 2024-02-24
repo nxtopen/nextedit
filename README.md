@@ -2,7 +2,7 @@
 
 ## About NextEdit
 
-NextEdit is an WYSIWYG Editor built for NextJS. It can be widely used in react/nextjs admin panels, dashboard or wherever you want. The project is open-source and open for new features. With the goal in keeping the package sizes and dependencies minimal NextEdit can be also considered as a lightweight editor for your application’s requirements.
+NextEdit is an WYSIWYG Editor built for NextJS. It can be widely used in react/nextjs admin panels, dashboard or wherever you want. The project is open-source and open for new features.
 
 ## Usage
 
@@ -28,3 +28,6 @@ export default function Home() {
   );
 }
 ```
+## Demo
+
+#### [View Demo On Stackblitz](https://stackblitz.com/edit/nextedit?file=app%2Fpage.tsx)
