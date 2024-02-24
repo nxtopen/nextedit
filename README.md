@@ -1,7 +1,5 @@
 # WYSIWYG Editor For NextJS
 
-## About NextEdit
-
 NextEdit is an WYSIWYG Editor built for NextJS. It can be widely used in react/nextjs admin panels, dashboard or wherever you want. The project is open-source and open for new features.
 
 ## Usage
