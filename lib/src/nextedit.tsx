@@ -1,14 +1,19 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, FC } from 'react';
 import { IconButton } from '@mui/material';
 import { FormatBold, FormatItalic, FormatUnderlined, FormatAlignLeft, FormatAlignCenter, FormatAlignRight, FormatListNumbered, FormatListBulleted, FormatIndentIncrease, FormatIndentDecrease } from '@mui/icons-material';
 
-const NextEdit = () => {
-  const [htmlContent, setHtmlContent] = useState('');
-  const textAreaRef = useRef(null);
+interface NextEditProps {
+}
 
-  const handleFormat = (format) => {
-    document.execCommand(format);
-    textAreaRef.current.focus();
+const NextEdit: FC<NextEditProps> = () => {
+  const [htmlContent, setHtmlContent] = useState<string>('');
+  const textAreaRef = useRef<HTMLDivElement>(null);
+
+  const handleFormat = (format: string) => {
+    if (textAreaRef.current) {
+      document.execCommand(format);
+      textAreaRef.current.focus();
+    }
   };
 
   return (
@@ -30,7 +35,7 @@ const NextEdit = () => {
         ref={textAreaRef}
         contentEditable={true}
         style={{ border: '1px solid #ccc', padding: '10px', minHeight: '100px', marginBottom: '20px', lineHeight: '1.5', backgroundColor: '#fff', paddingInline: '25px' }}
-        onInput={(e) => setHtmlContent(e.target.innerHTML)}
+        onInput={(e) => setHtmlContent(e.currentTarget.innerHTML)}
       />
     </div>
   );
