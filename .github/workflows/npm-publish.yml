@@ -13,7 +13,6 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 20
-          registry-url: https://registry.npmjs.org/
       - name: Publish
         run: |
           cd ./lib
@@ -24,8 +23,6 @@ jobs:
           cd ./usage
           npm link nextedit
           npm run build
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.npm_token }}
 
   build-publish:
     runs-on: ubuntu-latest
