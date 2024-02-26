@@ -3,8 +3,7 @@ declare module 'nextedit' {
 
     export interface NextEditProps {
         onChange: (html: string) => void;
-        content: string; // Update content prop type to string
-        id: string; // Add id prop
+        // content: string; // Update content prop type to string
     }
 
     const NextEdit: React.FC<NextEditProps>;
