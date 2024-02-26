@@ -1,6 +1,6 @@
 {
   "name": "nextedit",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "RichText Editor for Next.js",
   "main": "dist/nextedit.js",
   "types": "dist/nextedit.d.ts",
